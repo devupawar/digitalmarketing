@@ -1,0 +1,147 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+body{
+  background-color: rgb(146, 245, 242);
+}
+.serviceHeading{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(12, 150, 192);
+  margin-top: 2vw;
+  
+ }
+ .servicepara{
+   text-align: center;
+   font-weight: bold;
+ }
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2vw;
+  margin: 5vw;
+}
+
+.service-card {
+  background-color: #f7f7f7;
+  border-radius: 2vw;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  animation: fadeIn 2s ease forwards; /* Apply the fadeIn animation */
+}
+
+.icon-container{
+  background-color: rgb(18, 227, 220);
+  padding: 1vw;
+  border-radius: 4vw;
+}
+
+.service-icon {
+  font-size: 2rem;
+}
+
+.service-name {
+  font-size: 1.5rem;
+  color: rgb(5, 148, 204);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.service-description {
+  margin: 0;
+  font-size: 1rem;
+}
+.knowmore-bt{
+   padding: 2vh;
+   font-size: 1rem;
+   font-weight: bold;
+   border-radius: 4vh;
+   margin-top: 1vw;
+   border: 1px solid rgb(5, 148, 204);
+   color: rgb(5, 148, 204);
+   background-color: white;
+}
+.knowmore-bt:hover{
+  background-color: rgb(5, 148, 204);
+  color: white;
+}
+@media screen and (max-width: 991px) {
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(60px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .serviceHeading {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(12, 150, 192);
+    margin-top: 2vh;
+  }
+
+  .servicepara {
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.7rem;
+    margin-left: 5vh;
+    margin-right: 5vh;
+  }
+
+  .services-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2vh;
+    margin: 5vh;
+  }
+
+  .service-card {
+    background-color: #f7f7f7;
+    border-radius: 2vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 3s ease forwards; /* Apply the fadeIn animation */
+  }
+
+  .icon-container {
+    background-color: rgb(18, 227, 220);
+    padding: 1vh;
+    border-radius: 4vh;
+  }
+
+  .service-icon {
+    font-size: 1.5rem;
+  }
+
+  .service-name {
+    font-size: 1rem;
+    color: rgb(5, 148, 204);
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .service-description {
+    margin: 0;
+    font-size: 0.7rem;
+  }
+}

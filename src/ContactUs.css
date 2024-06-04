@@ -1,0 +1,157 @@
+/* ContactUs.css */
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.contact-us-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(220, 246, 249);
+}
+
+.form-container {
+  flex: 1;
+  padding: 2vw;
+  height: 45vw;
+  background-color: rgb(220, 246, 249);
+  animation: slideInLeft 1s ease-out;
+}
+
+.form-box {
+  margin-left: 10vw;
+  margin-top: 5vw;
+}
+
+.form-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(39, 104, 130);
+}
+
+.form-group {
+  margin-bottom: 1vw;
+  margin-top: 1vw;
+  display: flex; /* Display form group items in a row */
+}
+
+.contact-label {
+  font-family: Arial, Helvetica, sans-serif;
+  flex: 1; /* Expand label to fill available space */
+  font-weight: bold;
+  margin-top: 1.8vw;
+  color: rgb(65, 64, 64);
+}
+
+.contact-input {
+  resize: vertical;
+  border-radius: 1.5vw;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 1vw;
+  margin-top: 1vw;
+  flex: 3; /* Expand input to fill available space */
+  width: 100%; /* Take up all available space within the form group */
+}
+
+.contactus-button {
+  margin-left: 4vw;
+  border-radius: 1vw;
+  padding: 0.6vw;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(6, 88, 121);
+  width: 10vw;
+  border: none;
+  margin-top: 2vw;
+  background-color: rgb(241, 222, 8);
+}
+
+.image-container {
+  flex: 1;
+  animation: slideInRight 1s ease-out;
+}
+
+.image-container img {
+  width: 95%;
+  height: 35vw;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 991px) {
+  .form-heading {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 1vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(39, 104, 130);
+  }
+
+  .form-container {
+    flex: 1;
+    padding: 0 !important;
+    height: 38vh;
+    background-color: rgb(220, 246, 249);
+  }
+
+  .form-box {
+    margin-left: 1vh;
+  }
+
+  .form-group {
+    margin-bottom: 1vw;
+    display: flex; /* Display form group items in a row */
+  }
+
+  .contact-label {
+    font-family: Arial, Helvetica, sans-serif;
+    flex: 2; /* Expand label to fill available space */
+    font-weight: bold;
+    margin-top: 2vh;
+    margin-left: 1vh;
+    font-size: 0.5rem;
+    color: rgb(17, 2, 2);
+  }
+
+  .contact-input {
+    resize: vertical;
+    border: 0.2vh solid black;
+    border-radius: 1.5vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 1vh;
+    font-size: 0.7rem;
+    flex: 5; /* Expand input to fill available space */
+  }
+
+  .contactus-button {
+    margin-left: 4vh;
+    border-radius: 1vh;
+    padding: 0.6vw;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(6, 88, 121);
+    width: 10vh;
+    border: none;
+    margin-top: 3vw;
+    background-color: rgb(254, 238, 69);
+  }
+}

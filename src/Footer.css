@@ -1,0 +1,212 @@
+.footer {
+  background-color: #0bd5ba; 
+  color: #fff;
+  padding: 1vw;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+ width: 18vw; 
+}
+.footer-section-company{
+  width: 30vw;
+}
+.footer-section-services{
+  width: 18vw;
+
+}
+.footer-section-social{
+  width: 18vw; 
+}
+
+.logo{
+  width:3vw;
+  margin-bottom: 10px;
+}
+
+.company-details {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  margin-left: 1vw;
+}
+
+.company-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(17, 4, 72);
+}
+
+.contact-info {
+  margin-bottom: 10px;
+  color: rgb(17, 4, 72);
+  margin-left: 2vw;
+  
+}
+.contact-icon{
+  font-size: 1.5rem;
+}
+.email-link{
+  text-decoration: none;
+  color: rgb(17, 4, 72);
+  font-weight: bold;
+
+}
+
+.phone-number {
+  font-weight: bold;
+}
+
+.footer-service-head,
+.follow-us-head {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(17, 4, 72);
+  margin-top: 1vw;
+}
+
+.quick-links,
+.social-links {
+  list-style-type: none;
+  padding: 0;
+  color: rgb(17, 4, 72);
+}
+
+.quick-link,
+.social-link {
+  margin-bottom: 1vw;
+  color: rgb(17, 4, 72);
+  text-decoration: none;
+}
+.service{
+  color: rgb(17, 4, 72);
+  list-style: none;
+}
+.footer-text {
+  text-align: center;
+  font-size: 1rem;
+  color: rgb(17, 4, 72);
+  text-decoration: none;
+}
+
+.footer-line {
+  border-top: 1px solid #fff;
+  margin-top: 20px;
+}
+
+.social-links {
+  display: flex;
+  color: rgb(17, 4, 72);
+}
+
+.social-link {
+  margin-right: 20px;
+  color: rgb(17, 4, 72);
+}
+
+.social-icon {
+  color: rgb(17, 4, 72);
+  font-size: 3rem;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+@media screen and (max-width: 991px){
+  
+  .logo{
+    width:4vh;
+    margin-bottom: 10px;
+  }
+  .company-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(17, 4, 72);
+    margin-top: 0.6vh;
+  }
+  
+  .contact-info {
+    color: rgb(17, 4, 72);
+    font-size: 0.7rem;
+    
+  }
+  .contact-icon{
+    font-size: 1rem;
+  }
+  .email-link{
+    text-decoration: none;
+    color: rgb(17, 4, 72);
+    font-weight: bold;
+  }
+  
+  .phone-number {
+    font-weight: bold;
+  }
+  .footer-service-head,
+.follow-us-head {
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(17, 4, 72);
+}
+
+
+  .footer-container{
+    flex-direction: column;
+  }
+  .footer-section-company{
+    width: 40vh;
+    flex-direction: column;
+  }
+  .footer-section-services{
+    width: 30vh;
+    margin-left: 1vh;
+  }
+  .footer-section-Explore{
+    margin-left: 1vh;
+
+  }
+  .footer-section-social{
+    width: 30vh; 
+    margin-left: 1vh;
+    margin-bottom: 0vh;
+  }
+  .social-icon {
+    color: rgb(17, 4, 72);
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+  }
+  .footer-line {
+    border-top: 1px solid white;
+    margin-top: 1vh;
+  }
+  .quick-link,
+.social-link {
+  margin-bottom: 0vh;
+  color: rgb(17, 4, 72);
+  text-decoration: none;
+}
+  .social-links {
+    display: flex;
+    color: rgb(17, 4, 72);
+    margin-bottom: 0vh;
+    margin-top: 0vh;
+  }
+  
+  .social-link {
+    margin-right: 20px;
+    color: rgb(17, 4, 72);
+    font-size: 0.7rem;
+  }
+  .service{
+    color: rgb(17, 4, 72);
+    list-style: none;
+    font-size: 0.7rem;
+  }
+  
+}

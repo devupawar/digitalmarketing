@@ -1,0 +1,100 @@
+.custom-navbar {
+  background-color: transparent; /* Make the background transparent */
+  padding: 15px 0;
+  font-family: poppins;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; /* Align items to the start and end of the container */
+}
+
+.logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.company-name-nav {
+  color: rgb(201, 32, 32);
+  margin: auto;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.logo img {
+  margin-right: 1vw; /* Adjust spacing between logo and text */
+}
+
+.routes {
+  color: rgb(201, 32, 32);
+  text-decoration: none;
+  font-size: 1.3rem!important;
+  font-weight: bold;
+  transition: color 0.3s;
+  position: relative;
+}
+
+/* Navbar routes hover effect ki styling */
+.routes:hover {
+  color: rgb(0, 0, 0);
+}
+
+/* Navbar routes ke baad underline styling */
+.routes::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s;
+}
+
+/* Navbar routes hover ke baad underline styling */
+.routes:hover::after {
+  width: 100%;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.Whatsapp-button {
+  animation: bounce 2s infinite;
+  padding: 0.6vw !important;
+  font-weight: bold !important;
+  font-size: 1.2rem;
+  background-color: rgb(50, 169, 3) !important;
+  margin-left: 2vh;
+  border-radius: 3vw !important;
+  border: none !important;
+}
+
+/* Media Query for Tablets */
+@media screen and (max-width: 991px) {
+  .container {
+    display: flex;
+  }
+  .routes {
+    font-size: 1.2rem; /* Font size ko adjust kiya */
+  }
+  .logo img {
+    margin-right: 0;
+  }
+
+  .company-name-nav {
+    font-size: 1rem !important;
+    margin: auto;
+    align-items: center;
+  }
+}

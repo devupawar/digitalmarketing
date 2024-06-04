@@ -1,0 +1,108 @@
+.testimonials-container {
+  padding: 2vw;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.testimonial-heading {
+  font-size: 2.5rem;
+  margin-bottom: 2vw;
+  font-weight: bold;
+  margin-top: 2vw;
+  color: #0981a6;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.66);
+  animation: zoomInOut 3s infinite; /* Add the animation */
+}
+
+
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3vw;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.327);
+  width: 30vw;
+  padding: 20px;
+  height: 32vw;
+  text-align: left;
+  margin-top: 4vw;
+  margin-bottom: 4vw;
+}
+
+.testimonial-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2vw;
+  height: 10vw;
+  width: 10vw;
+  align-items: center;
+  margin-left: 8vw;
+}
+
+.client-logo {
+  width: 10vw;
+  height: 10vw;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1vw;
+  padding: 1vw;
+}
+
+.testimonial-info {
+  font-size: 1rem;
+  font-style: italic;
+  color: black !important;
+  text-align: center;
+}
+
+/* Media Query for screens narrower than 991px */
+@media screen and (max-width: 991px) {
+  .testimonials-container {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .testimonial-heading {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    margin-bottom: 10px; /* Adjust margin for smaller screens */
+    margin-top: 10px; /* Adjust margin for smaller screens */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.227);
+  }
+
+  .testimonials {
+    gap: 2vh; /* Adjust gap for smaller screens */
+  }
+
+  .testimonial-card {
+    width: 40vh; /* Adjust width for smaller screens */
+    height: 45vh;
+    margin: 20px auto; /* Center align for smaller screens */
+  }
+
+  .testimonial-logo {
+    margin-left: auto; /* Center align for smaller screens */
+    margin-right: auto; /* Center align for smaller screens */
+    height: 10vh !important;
+    width:10vh ;
+  }
+
+  .client-logo {
+    width: 35vh; /* Make logo fill container width for smaller screens */
+    height: 20vh; /* Maintain aspect ratio */
+    border-radius: 2vh !important; /* Adjust border radius for smaller screens */
+    padding: 7vh !important; /* Adjust padding for smaller screens */
+   
+  }
+  .testimonial-info {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: black !important;
+    margin-top: 5vh;
+    text-align: center;
+  }
+}
